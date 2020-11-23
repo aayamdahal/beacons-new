@@ -1,0 +1,66 @@
+// VARIABLES
+$main-font: "Poppins", sans-serif;
+$secondary-font: "Roboto", sans-serif;
+
+$main-color: rgb(0, 171, 108);
+$py-main: 3rem 4rem;
+
+$gradient: linear-gradient(
+  98deg,
+  rgba(0, 0, 0, 0.37) 26%,
+  rgba(0, 0, 0, 0.452) 98%
+);
+
+$box-shadow: 0px 10px 17px -3px rgba(0, 0, 0, 0.23);
+$box-shadow-hover: 0px 0px 17px 1px rgba(0, 0, 0, 0.65);
+
+$card-radius: 15px;
+$transition: ease 0.3s;
+
+$translate-card: translateY(-10px);
+
+$circle-color: rgba(221, 221, 221, 0.582);
+$circle-color-secondary-main: #ddd;
+$circle-color-secondary: rgba(221, 221, 221, 0.425);
+
+$blog-animation: dropDown 0.7s ease;
+
+$card-bg: #fff;
+
+// RESET
+*,
+*::after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: $main-font;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+.terms-container {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  font-family: $main-font;
+}
+
+.terms-content {
+  padding: 2rem 5rem;
+  span {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1rem;
+  }
+}

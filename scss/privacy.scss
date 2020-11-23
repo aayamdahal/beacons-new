@@ -1,0 +1,115 @@
+// VARIABLES
+$main-font: "Poppins", sans-serif;
+$secondary-font: "Roboto", sans-serif;
+
+$main-color: rgb(0, 171, 108);
+$py-main: 3rem 4rem;
+
+$gradient: linear-gradient(
+  98deg,
+  rgba(0, 0, 0, 0.37) 26%,
+  rgba(0, 0, 0, 0.452) 98%
+);
+
+$box-shadow: 0px 10px 17px -3px rgba(0, 0, 0, 0.23);
+$box-shadow-hover: 0px 0px 17px 1px rgba(0, 0, 0, 0.65);
+
+$card-radius: 15px;
+$transition: ease 0.3s;
+
+$translate-card: translateY(-10px);
+
+$circle-color: rgba(221, 221, 221, 0.582);
+$circle-color-secondary-main: #ddd;
+$circle-color-secondary: rgba(221, 221, 221, 0.425);
+
+$blog-animation: dropDown 0.7s ease;
+
+$card-bg: #fff;
+
+// RESET
+*,
+*::after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $main-font;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+.privacy-container {
+  min-height: 70vh;
+  width: auto;
+  background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("/img/privacy.jpg") no-repeat center center/cover;
+  .privacy-top-content {
+    padding: 0rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .privacy-logo {
+      img {
+        transform: scale(0.5);
+      }
+    }
+    a {
+      font-family: $main-font;
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+      border-radius: 0.5rem;
+      padding: 0.5rem 1rem;
+    }
+    a:hover {
+      color: black;
+    }
+  }
+  .other-top-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+      font-size: 3rem;
+      font-family: $main-font;
+      color: white;
+    }
+    p {
+      font-size: 1.5rem;
+      font-family: $main-font;
+      color: white;
+    }
+  }
+}
+
+.privacy-all-content {
+  padding: 2rem 3rem;
+
+  h1 {
+    font-size: 2rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  li {
+    font-size: 1rem;
+  }
+}
+.only-bg{
+        background-color: #3898ec;
+
+}
+
+// MEDIA QUERIES
+@import "media(ipad)";
+@import "media2(iphone)";
+@import "media3";

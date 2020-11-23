@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
+// VARIABLES
+$main-font: "Poppins", sans-serif;
+$secondary-font: "Roboto", sans-serif;
+
+$main-color: rgb(0, 171, 108);
+$py-main: 3rem 4rem;
+
+$gradient: linear-gradient(
+  98deg,
+  rgba(0, 0, 0, 0.37) 26%,
+  rgba(0, 0, 0, 0.452) 98%
+);
+
+$box-shadow: 0px 10px 17px -3px rgba(0, 0, 0, 0.23);
+$box-shadow-hover: 0px 0px 17px 1px rgba(0, 0, 0, 0.65);
+
+$card-radius: 15px;
+$transition: ease 0.3s;
+
+$translate-card: translateY(-10px);
+
+$circle-color: rgba(221, 221, 221, 0.582);
+$circle-color-secondary-main: #ddd;
+$circle-color-secondary: rgba(221, 221, 221, 0.425);
+
+$blog-animation: dropDown 0.7s ease;
+
+$card-bg: #fff;
+
+// RESET
+*,
+*::after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    90deg,
+    rgba(204, 204, 204, 0.6) 0%,
+    rgba(71, 67, 67, 0.6) 100%
+  );
+
+  font-family: $main-font;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+// UTILITY
+a {
+  text-decoration: none;
+}
+
+h1,
+p {
+  text-align: center;
+}
+label {
+  font-size: 1rem;
+  color: black;
+  display: block;
+  margin: 1em 0 0.2em;
+}
+/* single-line text, checkbox, and button */
+input,
+select,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.3em;
+  font-size: 20px;
+  background-color: #fbfbfb;
+  border: solid 1px #ccc;
+  resize: vertical;
+}
+textarea {
+  min-height: 180px;
+}
+select {
+  color: indigo;
+}
+option {
+  color: blue;
+  background: lavenderBlush;
+}
+input[type="checkbox"] {
+  display: inline;
+  width: auto;
+  color: red;
+}
+
+input[type="submit"] {
+  background: $main-color;
+  margin: 1em 0 0;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-out;
+}
+
+input:focus,
+input:hover,
+select:focus,
+select:hover,
+textarea:focus,
+textarea:hover {
+  background: lavenderBlush;
+}
+
+/* hover and focus states */
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+  background: rgb(0, 126, 80);
+  outline: none;
+}
+
+@media screen and (min-width: 600px) {
+  /*  make the form 2 columns */
+  form:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .column {
+    width: 50%;
+    padding: 1em;
+    float: left;
+  }
+}
+.form-text {
+  font-size: 1.2rem;
+}
+.contact-btn {
+  color: black;
+  font-family: $main-font;
+  width: 100%;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 20px;
+  margin-top: 1rem;
+  background-color: $main-color;
+  padding: 0.5rem 1rem;
+}
+.rem-color {
+  color: black;
+}
+.logo-contact {
+  display: block;
+  margin: 0 auto;
+}
+
+// MEDIA QUERIES
+@import "media(ipad)";
+@import "media2(iphone)";
+@import "media3";
